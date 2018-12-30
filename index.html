@@ -6,20 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    
     <script src="js/jquery-3.3.1.min.js"></script>
     
 </head>
-<body style="height:100%">
-    <button class="btn btn-info">hello world!</button>
-    <h1>标题一</h1>
-    <h2>标题二</h2>
-    <h3>标题三</h3>
-    <h4>标题四</h4>
-    <h5>标题五</h5>
-    <h6>标题六</h6>
+<body style="height:600px">
+    
+    <h1 id="btnLogin">登录</h1>
     <canvas id="canvas" style="height:100%"></canvas>
+    <script src="js/zhezhao.js"></script>
     <script src="js/digit.js"></script>
     <script src="js/conn.js"></script>
+
+    
+    <style type="text/css">
+        #mask {
+            background: #000;
+            opacity: 0.75;
+            filter:alpha(opacity=75);
+            position: absolute;
+            left:0px;
+            top:0px; 
+        }
+        #login {
+            position: fixed;
+            z-index: 10;
+        }
+        .loginCon {
+            width:670px;
+            height:380px;
+            background: red;
+            position: relative;
+        }
+        #close {
+            width:30px;
+            height:30px;
+            background: #ffcc00;
+            cursor: pointer;
+            position: absolute;
+            right:5px;
+            top:5px;
+        }
+    </style>
 </body>
-    <form></form>
 </html>

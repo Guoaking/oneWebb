@@ -28,6 +28,7 @@ window.onload = function () {
         render(context)
         update();
     }, 50);
+    binkWindow();
 }
 function getCurrentShowTimeSeconds() {
     var curTime = new Date();
@@ -71,7 +72,7 @@ function update() {
 
     }
     updateBalls();
-    console.log(balls.length);
+    // console.log(balls.length);
 }
 function updateBalls() {
     for(var i=0; i<balls.length;i++) {
